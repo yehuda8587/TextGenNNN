@@ -1390,7 +1390,7 @@ let upDatedActualSpaPhone = "SELECT SPA FOR Location Phone"
      }
 
 
-     if (spaNameStatus.value === "The Bay Aesthetics Tampa") {
+     if (spaNameStatus.value.includes("Elevatione")) {
         let hideOne = document.getElementById("hideOne")
         let hideTwo = document.getElementById("hideTwo")
         let hideThree = document.getElementById("hideThree")

@@ -118,7 +118,8 @@ let upDatedActualSpaPhone = "SELECT SPA FOR Location Phone"
             upDatedDurationTotal = "No Spa Selected";
             upDatedDurationOne = "No Spa Selected";
             upDatedDurationTwo = "No Spa Selected";
-            promoPrice = "No Spa Selected"
+            promoPrice = "No Spa Selected";
+            treatmentSelected = "No Spa Selected";
             break;
 
          case "Skin Analytics":
@@ -941,9 +942,7 @@ let upDatedActualSpaPhone = "SELECT SPA FOR Location Phone"
                                                                     promoPrice = "59.95"
                                                                     upDatedActualSpaPhone = "Can't find our spa? Give us a call at (512) 992-0050";
                                                                     treatmentSelected = "Non-surgical Face Lift";
-                                                                    break;
-
-                                                                
+                                                                    break;                   
 
                                                             case "Lola Soap Mesa":
                                                                 upDatedSpaName = "Lola Soap Spa";
@@ -1382,27 +1381,24 @@ let upDatedActualSpaPhone = "SELECT SPA FOR Location Phone"
                                    break; 
 
 
-
-                                   
-  
          default:
              break;
      }
 
 
      if (spaNameStatus.value.includes("Elevatione")) {
-        let hideOne = document.getElementById("hideOne")
-        let hideTwo = document.getElementById("hideTwo")
-        let hideThree = document.getElementById("hideThree")
-        let hideFour = document.getElementById("hideFour")
-        let hideFive = document.getElementById("hideFive")
+        let hideOne = document.getElementById("hideOne");
+        let hideTwo = document.getElementById("hideTwo");
+        let hideThree = document.getElementById("hideThree");
+        let hideFour = document.getElementById("hideFour");
+        // let hideFive = document.getElementById("hideFive");
 
 
         hideOne.classList.add("hide");
         hideTwo.classList.add("hide");
         hideThree.classList.add("hide");
         hideFour.classList.add("hide");
-        hideFive.classList.add("hide");
+        // hideFive.classList.add("hide");
 
 
      } else {
@@ -1410,7 +1406,7 @@ let upDatedActualSpaPhone = "SELECT SPA FOR Location Phone"
         hideTwo.classList.remove("hide");
         hideThree.classList.remove("hide");
         hideFour.classList.remove("hide");
-        hideFive.classList.remove("hide");
+        // hideFive.classList.remove("hide");
 
 
      }
